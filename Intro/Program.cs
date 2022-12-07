@@ -1,4 +1,4 @@
-﻿#region Task 1
+﻿#region Task 1 If else
 
 //Console.WriteLine("Enter first number:");
 //int numberOne = Convert.ToInt32(Console.ReadLine());
@@ -56,7 +56,7 @@
 
 #endregion
 
-#region Task 2
+#region Task 2 If Else
 
 //Console.WriteLine("Please enter name: ");
 //string name = Console.ReadLine();
@@ -66,30 +66,235 @@
 //Console.WriteLine($"{name.ToUpper()} {surname.ToUpper()}");
 #endregion
 
-#region Home Task
+#region Home Task If Else
 
-Console.Write("Enter door sizes: ");
-int doorFirstSize = Convert.ToInt32(Console.ReadLine());
-int doorSecondSize = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Enter door sizes: ");
+//int doorFirstSize = Convert.ToInt32(Console.ReadLine());
+//int doorSecondSize = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Enter closet sizes: ");
-int closetFirstSize = Convert.ToInt32(Console.ReadLine());
-int closetSecondSize = Convert.ToInt32(Console.ReadLine());
-int closetThirdSize = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Enter closet sizes: ");
+//int closetFirstSize = Convert.ToInt32(Console.ReadLine());
+//int closetSecondSize = Convert.ToInt32(Console.ReadLine());
+//int closetThirdSize = Convert.ToInt32(Console.ReadLine());
 
 
-int closetArea = 2 * (closetFirstSize * closetSecondSize + closetSecondSize * closetThirdSize + closetThirdSize * closetSecondSize);
-int doorArea = 2 * doorFirstSize * doorSecondSize;
+//int closetArea = 2 * (closetFirstSize * closetSecondSize + closetSecondSize * closetThirdSize + closetThirdSize * closetSecondSize);
+//int doorArea = 2 * doorFirstSize * doorSecondSize;
 
-Console.WriteLine($"Closest area - {closetArea}");
-Console.WriteLine($"Door area - {doorArea}");
-if(closetArea > doorArea)
+//Console.WriteLine($"Closest area - {closetArea}");
+//Console.WriteLine($"Door area - {doorArea}");
+//if(closetArea > doorArea)
+//{
+//    Console.WriteLine(false);
+//}
+//else if (closetArea == doorArea) Console.WriteLine(true);
+//else
+//{
+//    Console.WriteLine(true);
+//}
+#endregion
+
+
+#region Array and Loops
+
+//Arrays
+//string[] bosArray = new string[0];
+
+//Array.Resize(ref bosArray, bosArray.Length + 1);
+
+//Console.WriteLine(bosArray);
+
+//Loops
+
+//for
+//for (char i = 'A'; i <= 'Z'; i++)
+//{
+//    Console.WriteLine(i);
+//}
+
+//string number = Console.ReadLine();
+//int sum = 0;
+
+//for (int i = 0; i < number.Length; i++)
+//{
+//    sum = sum + int.Parse(number[i].ToString());
+//}
+//Console.WriteLine(sum);
+
+/*
+ 1. Dəmi çaydana qoymaq
+ 2. Su dəmləmək
+ 3. Qaynanmış suyu çaydana tökmək
+ 4. Qaza qoyub dəmləmək
+ */
+
+
+#endregion
+
+#region For & Foreach example
+
+//for (int i = 0; i <= 1000; i+=2)
+//{
+//        //Console.WriteLine(i);
+//}
+//int sum1 = 0;
+//for (int i = 0; i <= 1000; i++)
+//{
+//    sum1 += i;
+//}
+//int number = 1000;
+//Console.WriteLine(sum1);
+//foreach (var item in Enumerable.Range(1, number))
+//{
+//    if (item % 2 == 0)
+//    {
+//        Console.WriteLine(item);
+//    }
+//}
+//int[] number = new i[1...1000];
+
+#endregion
+
+#region Task For & Foreach
+
+
+//int number = Convert.ToInt32(Console.ReadLine());
+//var isSquare = false;
+//for (int i = number; i>=2 ;i/=2)
+//{
+//    if(i > 0 && i%2 == 0)
+//    {
+//        isSquare= true;
+//    } 
+//    else
+//    {
+//        isSquare= false;
+//        break;
+//    }
+//}
+//for (int i = 0; CharEnumerator % 2 == -; ++)
+//{
+
+//}
+
+//int number = Convert.ToInt32(Console.ReadLine());
+//int steps = 0;
+//for (int i = number; i>=1 ; i/=10)
+//{
+//    steps+=1;
+//}
+//Console.WriteLine(steps);
+
+
+#endregion
+
+#region Home Task For & ForEach
+
+#region Vurma Cədvəli
+//  1*1 = 1 
+//  1*2 = 2
+//  ...
+//  1*10=10
+//  -----------
+//  2*1=2
+
+/*
+
+for (int i = 1; i <= 10; i++)
 {
-    Console.WriteLine(false);
+	for (int j = 1; j <= 10; j++)
+	{
+		Console.WriteLine($"{i} * {j} = {i*j}");
+	}
+	Console.WriteLine("-----------------------");
 }
-else if (closetArea == doorArea) Console.WriteLine(true);
-else
+
+*/
+
+///////////////////////////////////////////////
+
+#endregion
+
+#region Kvadrat üçbucaq
+/*
+ *
+ **
+ ***
+ ****
+ *****
+ ******
+ 
+ */
+
+
+/////////////////////////////////
+/*
+
+for (int i = 0; i <= 6; i++)
 {
-    Console.WriteLine(true);
+	for (int j = 0; j <= i; j++)
+	{
+		Console.Write("*");
+	}
+	Console.WriteLine();
 }
+*/
+#endregion
+
+
+
+#region Dolu kvadrat
+/*
+**************
+**************  
+**************
+**************
+**************
+*/
+/*
+for (int i = 0; i < 6; i++)
+{
+	for (int j = 0; j < 6; j++)
+	{
+		Console.Write(" *");
+	}
+	Console.WriteLine();
+}
+*/
+#endregion
+
+// Boş kvadrat
+
+#region Boş kvadrat
+/*
+ * * * * * * * * * * *
+ *                   *
+ *                   *
+ *                   *
+ *                   *
+ * * * * * * * * * * *                   
+ */
+
+/*
+
+for (int i = 0; i < 6; i++)
+{
+	for (int j = 0; j < 5; j++)
+	{
+		if(j==0) Console.Write("* ");
+
+		else if (i == 0) Console.Write("* ");
+		else if (i == 5) Console.Write("* ");
+        else Console.Write("  ");
+
+    }
+	Console.Write("* ");
+	Console.WriteLine();
+}
+*/
+
+#endregion
+
+
+
 #endregion
