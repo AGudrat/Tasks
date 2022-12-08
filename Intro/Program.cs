@@ -55,7 +55,6 @@
 
 
 #endregion
-
 #region Task 2 If Else
 
 //Console.WriteLine("Please enter name: ");
@@ -65,7 +64,6 @@
 
 //Console.WriteLine($"{name.ToUpper()} {surname.ToUpper()}");
 #endregion
-
 #region Home Task If Else
 
 //Console.Write("Enter door sizes: ");
@@ -93,8 +91,6 @@
 //    Console.WriteLine(true);
 //}
 #endregion
-
-
 #region Array and Loops
 
 //Arrays
@@ -130,7 +126,6 @@
 
 
 #endregion
-
 #region For & Foreach example
 
 //for (int i = 0; i <= 1000; i+=2)
@@ -154,7 +149,6 @@
 //int[] number = new i[1...1000];
 
 #endregion
-
 #region Task For & Foreach
 
 
@@ -187,9 +181,7 @@
 
 
 #endregion
-
 #region Home Task For & ForEach
-
 #region Vurma Cədvəli
 //  1*1 = 1 
 //  1*2 = 2
@@ -214,7 +206,6 @@ for (int i = 1; i <= 10; i++)
 ///////////////////////////////////////////////
 
 #endregion
-
 #region Kvadrat üçbucaq
 /*
  *
@@ -240,9 +231,6 @@ for (int i = 0; i <= 6; i++)
 }
 */
 #endregion
-
-
-
 #region Dolu kvadrat
 /*
 **************
@@ -294,7 +282,138 @@ for (int i = 0; i < 6; i++)
 */
 
 #endregion
+#endregion
+#region For & do while
+//int[] arr = new int[] { 5, 9, 8, 12, 3, 4, 9 };
+
+//for (int i = 0; i < arr.Length-1; i++)
+//{
+//	Console.WriteLine(arr[i]);
+//}
 
 
 
+
+//int column = Convert.ToInt32(Console.ReadLine());
+//int[] ints = new int[6];
+
+//Random random = new();
+
+//for (int i = 0; i < column; i++)
+//{
+//	for (int j = 0; j < 6; j++)
+//	{
+//		int value = random.Next(1, 49);
+//		if (!ints.Contains(value)) ints[j] = value;
+//		else
+//		{
+//			j--;
+//			continue;
+//		};
+//		Console.Write($"{ints[j]} ");
+//	}
+//	Console.WriteLine(ints[i]);
+//	Console.WriteLine();
+//}
+
+
+
+//string exactName = "Qudrat";
+//string exactPassword = "qudret";
+
+//do
+//{
+//    Console.Write("Name: ");
+//    string name = Console.ReadLine();
+//    Console.Write("Surname: ");
+//    string password = Console.ReadLine();
+//    if (name == exactName && password == exactPassword)
+//    {
+//        Console.WriteLine("You are welcome!"); break;
+//    }
+//    else
+//    {
+//        Console.WriteLine("Name or password is incorrect!");
+//    };
+//} while (true);
+
+#endregion
+#region Try catch 
+
+//int arrLenght = 0;
+//int[] nums = Array.Empty<int>();
+
+
+//try
+//{
+//    do
+//    {
+//        int num = Convert.ToInt32(Console.ReadLine());
+//        Array.Resize(ref nums, arrLenght += 1);
+//        nums.SetValue(num, arrLenght - 1);
+//        Console.Write("Do you want to continue? (Y/N): ");
+//        string isContinue = Console.ReadLine();
+//        if (isContinue.ToUpper() == "Y") continue;
+//        else break;
+//    } while (true);
+//	Array.Sort(nums);
+//}
+//catch(FormatException ex)
+//{
+//	Console.WriteLine("Daxil etdiyiniz format düzgün deyil");
+//}
+//catch (OverflowException ex)
+//{
+//    Console.WriteLine("Daxil etdiyiniz reqem çox uzundur");
+//}
+//catch(Exception ex) {
+//	Console.WriteLine("Xəta baş verdi.");
+//}
+
+#endregion
+#region Home Task 
+
+/*
+//Write arr numbers withoute loops
+
+int[] arr = new int[] { 1, 2, 3, 4, 5 };
+Console.WriteLine(String.Join(", ", arr));
+*/
+
+/*
+
+//Is Contain
+
+try
+{
+    int number = Convert.ToInt32(Console.ReadLine());
+    int[] arr = new int[] { 1, 2, 3, 4, 5 };
+
+	//1
+    if (arr.Contains(number)) Console.WriteLine(true);
+    else Console.WriteLine(false);
+
+	//2
+	if (Array.Exists(arr, element => element == number)) Console.WriteLine(true);
+	else Console.WriteLine(false);
+
+}
+catch (FormatException ex)
+{
+	Console.WriteLine("Input format is not true.");
+}
+catch (OverflowException ex)
+{
+    Console.WriteLine("Input is to long.");
+}
+catch (ArgumentNullException ex)
+{
+	Console.WriteLine("İnput can not be empty");
+}
+catch (Exception ex)
+{
+	Console.WriteLine(ex.Message);
+}
+
+*/
 #endregion
